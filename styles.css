@@ -8,14 +8,28 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   z-index:-1;
+  font-family: 'Creepster', cursive;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color:#ffff00;
 }
-.title, .addDancerButton{
+a {
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.2);
+}
+.title, .addDancerButton, .makeLineButton{
   padding:5px 12px;
   float:right;
 }
+
+/*.addDancerButton, .makeLineButton {
+  padding: 15px 12px;
+  float:left;
+}
+*/
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -33,11 +47,13 @@ body, a:link, a:visited, a:active{
   /*border-radius:10px;*/
   height: 150px;
   position:absolute;
+  transition: transform .5s ease-in-out;
 }
 .vamp{
   /*border:10px solid red;*/
   height: 60px;
   position:absolute;
+  transition: transform .2s ease-in-out;
 }
 .blinky{
   /*border:10px solid red;*/
@@ -47,4 +63,13 @@ body, a:link, a:visited, a:active{
 
 img{
   max-height: 100%;
+}
+
+.vamp:hover {
+  transform: scale(2);
+}
+
+.zombie:hover {
+  /*transform: rotate(360deg);*/
+  transform: translateY(-50px) rotate(360deg);
 }
