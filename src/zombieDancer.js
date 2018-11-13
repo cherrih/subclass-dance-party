@@ -2,7 +2,7 @@ var ZombieDancer = function() {
     
     makeDancer.call(this, ...arguments);
     this.$node.addClass("zombie");
-    
+    this.$node.append('<img src="https://purepng.com/public/uploads/large/purepng.com-zombiezombiezombizonbihuman-corpsezombieshorrormental-diseasesviruses-1701527832858rdav1.png">');
 };
 
 ZombieDancer.prototype = Object.create(makeDancer.prototype);
@@ -16,4 +16,11 @@ ZombieDancer.prototype.step = function() {
     
     // .animate({marginLeft: ('+=' + String(pixels) + 'px')});
     
+}
+
+ZombieDancer.prototype.lineUp = function() {
+  $('.zombie').css({
+    'top': '700px'
+    // 'flex-direction': 'column'
+  });
 }

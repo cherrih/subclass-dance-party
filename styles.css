@@ -7,6 +7,7 @@ body{
   background-image:url("https://wallpaper-gallery.net/images/creepy-woods-wallpaper/creepy-woods-wallpaper-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  z-index:-1;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -28,17 +29,22 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }*/
 .zombie{
-  border:10px solid red;
-  border-radius:10px;
+  /*border:10px solid red;*/
+  /*border-radius:10px;*/
+  height: 150px;
   position:absolute;
 }
 .vamp{
-  border:10px solid red;
-  border-radius:10px;
+  /*border:10px solid red;*/
+  height: 60px;
   position:absolute;
 }
 .blinky{
-  border:10px solid red;
-  border-radius:10px;
+  /*border:10px solid red;*/
+  height: 100px;
   position:absolute;
+}
+
+img{
+  max-height: 100%;
 }
