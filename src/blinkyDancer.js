@@ -34,3 +34,10 @@ BlinkyDancer.prototype.lineUp = function() {
 //     'left': left
 //   });
 // }
+
+// BlinkyDancer.prototype.party = function() {
+//   $('.blinky').css({
+//     'top': '800px'
+//     // 'flex-direction': 'column'
+//   });
+// }

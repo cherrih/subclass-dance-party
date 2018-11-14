@@ -19,16 +19,15 @@ a {
 a:hover {
   transform: scale(1.2);
 }
-.title, .addDancerButton, .makeLineButton{
+.title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
-
-/*.addDancerButton, .makeLineButton {
-  padding: 15px 12px;
+.makeLineButton, .partnerDancingButton {
+  padding: 5px 12px;
   float:left;
 }
-*/
+
 
 .topbar{
   height:32px;
@@ -54,6 +53,7 @@ a:hover {
   height: 60px;
   position:absolute;
   transition: transform .2s ease-in-out;
+  transform: scaleX(-1);
 }
 .blinky{
   /*border:10px solid red;*/
@@ -71,5 +71,5 @@ img{
 
 .zombie:hover {
   /*transform: rotate(360deg);*/
-  transform: translateY(-50px) rotate(360deg);
+  transform: translateY(-50px) rotate(-360deg);
 }

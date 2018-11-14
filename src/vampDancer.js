@@ -18,3 +18,10 @@ VampDancer.prototype.lineUp = function() {
     // 'flex-direction': 'column'
   });
 }
+
+// VampDancer.prototype.party = function() {
+//   $('.vamp').css({
+//     'top': '800px'
+//     // 'flex-direction': 'column'
+//   });
+// }

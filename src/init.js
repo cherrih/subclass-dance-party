@@ -35,6 +35,7 @@ $(document).ready(function() {
   
   var lineMaker = function(dancers) {
     for(var i = 0; i < dancers.length; i ++) {
+      console.log(dancers[i]);
       dancers[i].lineUp();
     }
   }
@@ -47,6 +48,9 @@ $(document).ready(function() {
 
   });
 
+  ////////////////////////////////
+  // shuffle function tbc
+  ////////////////////////////////
   // var shuffler = function(dancers) {
   //   for(var i = 0; i < dancers.length; i ++) {
   //     dancers[i].shuffle();
@@ -59,6 +63,52 @@ $(document).ready(function() {
   //   shuffler(window.dancers);
 
   // });
+
+  ////////////////////////////////
+  // dance battle function tbc
+  ////////////////////////////////
+
+  // var getPosition = function(element) {
+  //   var position = element.$node.getBoundingClientRect();
+  //   return {
+  //     x: position.left + posiiton.width / 2,
+  //     y: position.left + posiiton.height / 2
+  //   };
+  // };
+
+  // var findDistance = function(a, b) {
+  //   var aPosition = getPosition(a);
+  //   var bPosition = getPosition(b);
+
+  //   return Math.sqrt(
+  //     Math.pow(aPosition.x - bPosition.x, 2) + Math.pow(aPosition.y - bPosition.y, 2)
+  //   );
+  // }
+
+  // var minDistance = Number.POSITIVE_INFINITY;
+  // var dancer1;
+  // var dancer2;
+
+  // var partnerDance = function(dancers) {
+  //   for (var i = 0; i < dancers.length; i++) {
+  //     for (var j = i + 1; j < dancers.length; j++) {
+  //       if (findDistance(dancers[i], dancers[j]) < minDistance) {
+  //         minDistance = findDistance(dancers[i], dancers[j]);
+  //         dancer1 = dancers[i];
+  //         dancer2 = dancers[j];
+  //       }
+  //     }
+  //   }
+  //   dancer1.party();
+  //   dancer2.party();
+  // }
+  
+  // $('.partnerDancingButton').on('click', function(event) {
+  //   var partnerDancingFunctionName = $(this).data('partner-dancing-function-name');
+  //   var partnerDancingFunction = window[partnerDancingFunctionName];
+  //   partnerDance(window.dancers);
+  // });
+  
 
 
 });
